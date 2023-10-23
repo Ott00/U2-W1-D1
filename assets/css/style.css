@@ -1,0 +1,414 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Poppins, "Helvetica Neue", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 15px;
+  background-image: url("../img/sfondo.png");
+  background-position: center center;
+}
+* {
+  box-sizing: border-box;
+}
+hr {
+  display: none;
+} /* rimuove l'elemento */
+
+/* HEADER */
+header {
+  background: rgb(0, 160, 198);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 160, 198, 1) 0%,
+    rgba(3, 109, 134, 1) 68%
+  );
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 3px 3px #444;
+  margin-bottom: 1.5em;
+  padding: 2em 1.5em;
+}
+header div img {
+  margin-bottom: 20px;
+}
+header nav ul {
+  margin: 0;
+}
+header nav li {
+  list-style: none;
+}
+header nav li a {
+  color: white;
+  text-decoration: none;
+}
+header nav li a:hover {
+  color: red;
+}
+header nav li a::before {
+  content: "\22c6\0020";
+}
+
+/* MAIN */
+main {
+  background-color: #fff;
+  box-shadow: 0 3px 3px #444;
+  padding: 2em 1em;
+  margin-bottom: 1.5em;
+}
+section {
+  background-color: #e3e3e3;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+section h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.6rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.7em;
+}
+p,
+address,
+ul,
+ol,
+dl,
+blockquote {
+  margin-bottom: 1.2em;
+}
+h1 + p {
+  color: #a0a0a0;
+}
+ul,
+ol {
+  margin-left: 2em;
+}
+a {
+  color: #00a0c6;
+  font-weight: bold;
+}
+strong {
+  color: #a02571;
+  font-weight: bold;
+}
+code {
+  background-color: #e3e3e3;
+  border: 1px solid #969494;
+  border-radius: 5px;
+}
+iframe {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+  border-radius: 20px;
+}
+
+/* TABELLE */
+table {
+  margin-bottom: 2em;
+}
+caption {
+  font-weight: bold;
+  font-style: italic;
+}
+thead tr {
+  background-color: #3f6bca;
+  color: #ffffff;
+}
+th,
+td {
+  padding: 12px 15px;
+  vertical-align: bottom;
+  text-align: center;
+}
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #3f6bca;
+}
+
+/* FORM */
+input {
+  padding: 5px;
+  border: 0;
+  border-bottom: 1px dashed #333;
+}
+button {
+  padding: 4px 7px;
+  background-color: #3f6bca;
+  border: 0;
+  color: white;
+  font-weight: bold;
+}
+
+section h2 {
+  background-color: grey;
+  text-transform: capitalize;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+aside div {
+  background-color: #e3e3e3;
+  border: 1px solid #c3c3c3;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+aside div p:last-child {
+  margin-bottom: 0;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+/* FOOTER */
+footer {
+  background: rgb(53, 53, 53);
+  background: linear-gradient(
+    0deg,
+    rgba(53, 53, 53, 1) 0%,
+    rgba(5, 85, 103, 1) 68%
+  );
+  box-shadow: 0 3px 3px #444;
+  color: #f0f0f0;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2rem;
+}
+footer a {
+  color: fuchsia;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 320px) {
+  header img {
+    width: 160px;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+
+  article p,
+  article ul,
+  article ol,
+  article {
+    font-size: 1rem;
+  }
+
+  article table {
+    width: 220px;
+  }
+
+  article table th {
+    padding: 10px 4px;
+  }
+
+  article iframe {
+    height: 150px;
+  }
+
+  fieldset input,
+  fieldset button {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  aside {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  main h1 {
+    font-size: 45px;
+    padding: 0;
+  }
+
+  main h2 {
+    font-size: 2rem;
+  }
+
+  main p,
+  main ul,
+  main ol {
+    font-size: 1.5rem;
+  }
+
+  article table {
+    margin: 0 auto;
+    margin-block: 4rem;
+    width: 70%;
+  }
+
+  section h2 {
+    margin-top: 0.7rem;
+    font-size: 1.7rem;
+  }
+
+  fieldset input {
+    font-size: 1.2rem;
+    width: 70%;
+    height: 30px;
+  }
+  fieldset button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  aside p {
+    font-size: 1.3rem;
+  }
+
+  aside div p:last-child {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 15px 80px;
+  }
+  header {
+    text-align: left;
+    padding: 0 1.5em;
+  }
+  header div {
+    display: inline-block;
+    width: 65%;
+  }
+
+  header div img {
+    margin: 1rem 2.5rem;
+    vertical-align: middle;
+  }
+
+  header div p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  header nav {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2rem;
+  }
+
+  header nav ul {
+    text-align: right;
+  }
+
+  main h1 {
+    font-size: 50px;
+  }
+
+  main h2 {
+    font-size: 2.5rem;
+  }
+
+  main p,
+  main ul,
+  main ol {
+    font-size: 1.8rem;
+  }
+
+  main ul,
+  main ol {
+    line-height: 3.5rem;
+  }
+
+  article table {
+    margin: 0 auto;
+    margin-block: 8rem;
+    width: 70%;
+    font-size: 2rem;
+  }
+
+  article iframe {
+    width: 49%;
+    height: 220px;
+    vertical-align: middle;
+  }
+
+  article section {
+    display: inline-block;
+    width: 49%;
+    border-radius: 30px;
+    padding: 20px;
+    vertical-align: middle;
+  }
+
+  aside div {
+    display: inline-block;
+    width: 33%;
+  }
+}
+
+@media print {
+  *,
+  body,
+  main {
+    box-shadow: none;
+    border: none;
+    background-image: none;
+    font-size: 2.2rem;
+  }
+
+  header,
+  aside,
+  iframe,
+  iframe + section,
+  footer {
+    display: none;
+  }
+
+  table {
+    page-break-before: always;
+  }
+}
